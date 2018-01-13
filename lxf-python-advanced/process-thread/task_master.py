@@ -62,7 +62,7 @@ def start_server():
     # 从result队列读取结果:
     print('Now, try get results...')
     for i in range(10):
-        r = result.get(timeout=10)
+        r = result.get(timeout=10) 
         print('Result: %s' % r)
     # 关闭: queue manager
     manager.shutdown()
