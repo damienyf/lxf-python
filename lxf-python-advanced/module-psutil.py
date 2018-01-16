@@ -67,3 +67,9 @@ p.num_threads() # 进程的线程数量
 p.threads() # 所有线程信息
 p.environ() # 进程环境变量
 p.terminate() # 结束进程
+
+
+# 和获取网络连接类似，获取一个root用户的进程需要root权限，启动Python交互环境或者.py文件时，需要sudo权限。
+
+# psutil还提供了一个test()函数，可以模拟出ps命令的效果：
+psutil.test()
